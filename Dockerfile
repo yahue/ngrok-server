@@ -1,6 +1,6 @@
-FROM ubuntu:trusty
-MAINTAINER Feng Honglin <tifayuki@gmail.com>
-
+FROM debian:latest
+MAINTAINER ArthurWang <yahui9119@gmail.com>
+COPY sources.list /etc/apt/sources.list
 RUN apt-get update && \
     apt-get install -y build-essential golang git mercurial && \
     mkdir -p /release
