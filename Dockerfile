@@ -1,6 +1,5 @@
-FROM debian:latest
+FROM index.alauda.cn/testbunker/docker-debian
 MAINTAINER ArthurWang <yahui9119@gmail.com>
-COPY sources.list /etc/apt/sources.list
 RUN apt-get update && \
     apt-get install -y build-essential golang git mercurial && \
     mkdir -p /release
